@@ -1,0 +1,16 @@
+<div>
+  <h1>Логические выражения</h1>
+  <select [(ngModel)]="operatorNo">
+    <option value="!">!</option>
+    <option value=""> </option>
+  </select>
+  <input [(ngModel)]="firstOperant" type="number">
+  <select [(ngModel)]="operatorMain">
+    <option value="&&">&&</option>
+    <option value="||">||</option>
+  </select>
+  <input [(ngModel)]="secondOperant" type="number">
+  <input (click)="doCalc()" type="submit" value="Подтвердить">
+  <p>Результат: {{result}}</p>
+  <p>Текст ошибки: {{errorMes}}</p>
+</div>
